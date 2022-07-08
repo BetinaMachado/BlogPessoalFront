@@ -3,5 +3,5 @@ export const environment = {
   token: '',
   nome: '',
   id: 0,
-  foto: 'https://i.imgur.com/Irbz471.png'
+  foto: ''
 };
