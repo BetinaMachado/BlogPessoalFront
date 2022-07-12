@@ -29,6 +29,14 @@ getByIdPostagem(id: number): Observable<Postagem>{
   return this.http.get<Postagem>(`https://personalblogbe.herokuapp.com/postagens/${id}`, this.token)
 }
 
+putPostagem(postagem: Postagem): Observable<Postagem>{
+  return this.http.put<Postagem>('https://personalblogbe.herokuapp.com/postagens', postagem, this.token)
+}
+
+deletePostagem(id: number){
+  return this.http.delete(`https://personalblogbe.herokuapp.com/postagens/${id}`, this.token)
+}
+
 // getAllPostagens(): Observable<Postagem[]>{
 //   return this.http.get<Postagem[]>('http://localhost:8080/postagens', this.token)
 // }
