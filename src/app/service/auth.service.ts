@@ -41,7 +41,7 @@ export class AuthService {
 
   // getByIdUsuario(id: number): Observable<Usuario> {
   //   return this.http.get<Usuario>(`http://localhost:8080/usuarios/${id}`)
-  //}
+  // }
 
   logado() {
     let ok = false
